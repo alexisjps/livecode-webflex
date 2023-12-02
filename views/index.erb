@@ -1,0 +1,8 @@
+<h1>My restaurants</h1>
+
+<% @restaurants.each do |restaurant| %> # une instance = un resto
+  <p><%= restaurant.name %></p>
+  <p><%= restaurant.address %></p>
+  <p><%= restaurant.rating %></p>
+  <a href="/restaurants/<%= restaurant.id %>">Voir le restaurant <%= restaurant.name %></a><br><br>
+<% end %>
